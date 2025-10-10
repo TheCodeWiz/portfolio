@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* darker blue */
+.bg-black-100 {
+  background-color: #06091f; /* or your desired color */
+}
+
+/* lighter blue */
+.bg-white-100 {
+  background-color: #161a31; /* or your desired color */
+}
+
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+ 
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+.scroller {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.scroller:hover .animate-scroll {
+  animation-play-state: paused;
+}
+
+.thick {
+  font-weight:700;   
+}
+
