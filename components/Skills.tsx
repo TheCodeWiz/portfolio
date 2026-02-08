@@ -98,7 +98,7 @@ const Framework_Library: skillType[] = [
 const Skills = () => {
   return (
     <div className='py-20' id='skills'>
-        <h1 className='heading flex justify-center items-center lg:text-5xl thick'>
+        <h1 className='heading flex justify-center items-center lg:text-5xl thick text-white'>
             My 
             <span className='text-purple-300'>&nbsp;Tech Skills</span>
         </h1>

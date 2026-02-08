@@ -16,7 +16,7 @@ const Footer = () => {
       />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center w-full px-4">
+      <div className="relative z-10 flex flex-col items-center w-full px-4 text-white">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight max-w-4xl mt-10">
           Ready to take <span className="text-purple-300">your</span> digital presence
           <br className="hidden sm:block" />

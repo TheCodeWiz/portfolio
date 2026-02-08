@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect.tsx";
 import MagicButton from "./ui/Magic-Button";
 import { FaLocationArrow } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 
 const Hero = () => {
   return (
@@ -45,17 +46,26 @@ const Hero = () => {
                 words="Transforming Concepts into Seamless User Experiences"
             />
 
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
                 Hi, I&apos;m Manav. A Full Stack Developer & Stock Market Trader. 
             </p>
 
-            <a href="#projects">
-                <MagicButton 
-                    title="Show my work"
-                    icon={<FaLocationArrow /> }
-                    position={"right"}
-                />
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <a href="#projects">
+                  <MagicButton 
+                      title="Show my work"
+                      icon={<FaLocationArrow /> }
+                      position={"right"}
+                  />
+              </a>
+              <a href="/Manav_Bhatt_Resume.pdf" download="Manav_Bhatt_Resume.pdf">
+                  <MagicButton 
+                      title="Download Resume"
+                      icon={<HiDownload /> }
+                      position={"left"}
+                  />
+              </a>
+            </div>
         </div>
       </div>
     </div>

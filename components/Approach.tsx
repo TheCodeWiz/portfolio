@@ -60,7 +60,7 @@ const Approach = () => {
 
   return (
     <div className='py-20 px-4' id='skills'>
-      <h1 className='heading flex justify-center items-center text-4xl lg:text-5xl font-bold'>
+      <h1 className='text-white heading flex justify-center items-center text-4xl lg:text-5xl font-bold'>
         My
         <span className='text-purple-300'>&nbsp;Approach</span>
       </h1>
